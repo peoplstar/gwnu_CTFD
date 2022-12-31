@@ -15,7 +15,7 @@ def page_not_found(error):
 
 
 if __name__ == '__main__': 
-    app.run(debug = True, host = '0.0.0.0')
+    app.run(debug = False, host = '0.0.0.0')
 
 
 #{{ ''.__class__.__mro__[1].__subclasses__() }}
