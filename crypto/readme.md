@@ -3,4 +3,4 @@
 2. stegsnow 
 3. rsa1 
 4. rsa2
-5. spammimic
+5. inbox = spammimic
